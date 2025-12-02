@@ -31,7 +31,8 @@ rag_multi_modal/
 │── venv/ # Environnement virtuel
 ````
 
-<img width="730" height="1342" alt="image" src="https://github.com/user-attachments/assets/c6de48a1-a7d5-4203-b373-13a76405b184" />
+<img width="730" height="827" alt="Capture d&#39;écran 2025-12-02 205053" src="https://github.com/user-attachments/assets/b05c76a7-a97e-441a-838f-a62ef14c6309" />
+
 
 ---
 # 2️⃣ Lancer PostgreSQL + pgvector
