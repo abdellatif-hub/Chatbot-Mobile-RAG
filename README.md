@@ -116,6 +116,12 @@ Méthode : GET
 ````
 <img width="1802" height="1205" alt="image" src="https://github.com/user-attachments/assets/66b1f138-709f-4525-aea3-50b5e3c3abf3" />
 
+---
+
+````
+Méthode : POST
+````
+<img width="2559" height="1345" alt="image" src="https://github.com/user-attachments/assets/46c53840-93fd-4112-b40e-37702d97a3da" />
 
 
 
