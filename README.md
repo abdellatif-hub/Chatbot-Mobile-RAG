@@ -121,7 +121,148 @@ Méthode : GET
 ````
 Méthode : POST
 ````
+
 <img width="2559" height="1345" alt="image" src="https://github.com/user-attachments/assets/46c53840-93fd-4112-b40e-37702d97a3da" />
+
+
+--- 
+
+# 🤖 RAG Multimodal Chatbot  
+### Flutter • FastAPI • PostgreSQL (pgvector) • OpenAI
+
+> 📌 **Projet académique – Chatbot RAG Multimodal**  
+> Ce projet implémente un **chatbot intelligent** capable de répondre à des questions **à partir de documents PDF (PFE)** en utilisant une architecture **RAG (Retrieval-Augmented Generation)**.
+
+---
+
+## 🧠 Objectif du projet
+
+L’objectif est de concevoir une application mobile Flutter qui permet à un utilisateur de poser des questions, et d’obtenir des réponses **basées uniquement sur le contenu d’un document PDF** grâce à :
+
+- la **recherche vectorielle (pgvector)**
+- les **embeddings OpenAI**
+- un **backend FastAPI**
+- une **interface mobile Flutter**
+
+---
+
+## 🏗️ Architecture globale
+
+```
+Flutter (Mobile App)
+│
+│ HTTP POST /rag-chat
+▼
+FastAPI (Backend RAG)
+│
+│ Similarity Search (pgvector)
+▼
+PostgreSQL + pgvector
+│
+▼
+OpenAI (Embeddings + LLM)
+
+```
+
+--- 
+
+## 🧰 Technologies utilisées
+
+### 🔹 Frontend
+- Flutter
+- Dart
+- Dio & Retrofit
+
+### 🔹 Backend
+- Python
+- FastAPI
+- Uvicorn
+
+### 🔹 Base de données
+- PostgreSQL
+- pgvector
+
+### 🔹 Intelligence artificielle
+- OpenAI (Embeddings + GPT)
+- Architecture RAG
+
+---
+
+## 📁 Structure du projet
+
+```
+📦 Projet
+├── chat_bot/ # Application Flutter
+│ ├── lib/
+│ │ ├── api/
+│ │ ├── models/
+│ │ ├── chat_screen.dart
+│ │ └── main.dart
+│ └── pubspec.yaml
+│
+└── RAG_MULTI_MODAL/ # Backend Python
+├── api.py
+├── rag_core.py
+├── ingest.py
+├── db.py
+├── openai_utils.py
+├── data/
+│ └── PFE.pdf
+└── docker-compose.yml
+
+```
+
+
+---
+
+## ⚙️ Fonctionnement du système RAG
+
+1. Le document **PFE.pdf** est découpé en chunks
+2. Chaque chunk est transformé en **embedding**
+3. Les embeddings sont stockés dans **PostgreSQL (pgvector)**
+4. Lors d’une question :
+   - Recherche des chunks les plus proches
+   - Construction d’un contexte
+   - Génération de la réponse avec OpenAI
+5. La réponse est envoyée à Flutter via FastAPI
+
+---
+
+## 🚀 Installation & Exécution
+
+### 1️⃣ Lancer PostgreSQL + pgvector
+```
+docker compose up -d
+
+```
+### 2️⃣ Ingestion du PDF
+```
+python ingest.py
+```
+
+### 3️⃣ Lancer le backend FastAPI
+```
+python -m uvicorn api:app --reload
+```
+
+### 📍 API disponible sur :
+
+[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
+### 4️⃣ Lancer l’application Flutter
+```
+flutter run
+```
+
+--- 
+
+# ⭐ Conclusion
+
+Ce projet démontre l’intégration complète d’un chatbot intelligent basé sur des documents, en combinant Flutter, FastAPI, PostgreSQL (pgvector) et OpenAI, selon une architecture professionnelle et moderne.
+
+
+
+
 
 
 
