@@ -127,7 +127,7 @@ Méthode : POST
 
 --- 
 
-# 🤖 RAG Multimodal Chatbot  
+# 🤖 RAG Multimodal Chatbot Frontend
 ### Flutter • FastAPI • PostgreSQL (pgvector) • OpenAI
 
 > 📌 **Projet académique – Chatbot RAG Multimodal**  
@@ -211,7 +211,7 @@ OpenAI (Embeddings + LLM)
 └── docker-compose.yml
 
 ```
-
+<img width="2387" height="1150" alt="image" src="https://github.com/user-attachments/assets/a6da03f2-94dc-4386-8781-1e0c37263460" />
 
 ---
 
@@ -235,24 +235,36 @@ OpenAI (Embeddings + LLM)
 docker compose up -d
 
 ```
+
+<img width="2004" height="302" alt="image" src="https://github.com/user-attachments/assets/399df23b-5460-4a4b-9018-2c3ccbbd3ce6" />
+
 ### 2️⃣ Ingestion du PDF
 ```
 python ingest.py
 ```
+<img width="2024" height="270" alt="image" src="https://github.com/user-attachments/assets/0845d514-d629-421d-a4b4-be8604216105" />
 
 ### 3️⃣ Lancer le backend FastAPI
 ```
 python -m uvicorn api:app --reload
 ```
+<img width="2019" height="484" alt="image" src="https://github.com/user-attachments/assets/54ba0582-c79f-4512-8cea-a68d79219a9b" />
 
 ### 📍 API disponible sur :
 
 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
+<img width="2540" height="809" alt="image" src="https://github.com/user-attachments/assets/01f287d6-bd58-416d-899f-82430b22d377" />
+
+
 ### 4️⃣ Lancer l’application Flutter
 ```
 flutter run
 ```
+
+**le chatbot fournit des réponses précises basées sur le contenu du document PDF indexé**
+
+<img width="526" height="1134" alt="image" src="https://github.com/user-attachments/assets/89f56797-5730-4829-bfa1-cb5dc6f6a021" />
 
 --- 
 
