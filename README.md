@@ -265,6 +265,7 @@ flutter run
 **le chatbot fournit des réponses précises basées sur le contenu du document PDF indexé**
 
 <img width="526" height="1134" alt="image" src="https://github.com/user-attachments/assets/89f56797-5730-4829-bfa1-cb5dc6f6a021" />
+<img width="471" height="1022" alt="image" src="https://github.com/user-attachments/assets/4c7bde1e-b01f-401a-9995-eff3eb409304" />
 
 --- 
 
